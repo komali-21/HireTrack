@@ -1,0 +1,32 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fb;
+}
+
+.welcome {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.welcome h1 {
+  color: #2563eb;
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.welcome h2 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.welcome p {
+  color: #666;
+  font-size: 17px;
+}
