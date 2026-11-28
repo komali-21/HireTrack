@@ -45,7 +45,7 @@ function PostJob() {
       setLoading(true);
 
       const response = await fetch(
-        "http://https://hiretrack-backend-ny1y.onrender.com/api/jobs",
+        "https://hiretrack-backend-ny1y.onrender.com/api/jobs",
         {
           method: "POST",
           headers: authHeaders({

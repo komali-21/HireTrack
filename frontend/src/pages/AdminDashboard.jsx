@@ -29,7 +29,7 @@ useEffect(() => {
     return;
   }
 
-  fetch("http://https://hiretrack-backend-ny1y.onrender.com/api/admin/dashboard", {
+  fetch("https://hiretrack-backend-ny1y.onrender.com/api/admin/dashboard", {
     headers: authHeaders()
   })
     .then((response) => {

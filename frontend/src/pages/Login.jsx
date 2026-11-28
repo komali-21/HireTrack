@@ -17,7 +17,7 @@ function Login() {
 
     try {
       const response = await fetch(
-        "http://https://hiretrack-backend-ny1y.onrender.com/api/users/login",
+        "https://hiretrack-backend-ny1y.onrender.com/api/users/login",
         {
           method: "POST",
           headers: {

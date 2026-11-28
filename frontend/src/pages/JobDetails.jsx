@@ -15,7 +15,7 @@ function JobDetails() {
     const fetchJob = async () => {
       try {
         const response = await fetch(
-          `http://https://hiretrack-backend-ny1y.onrender.com/api/jobs/${id}`
+          `https://hiretrack-backend-ny1y.onrender.com/api/jobs/${id}`
         );
 
         if (!response.ok) {

@@ -25,7 +25,7 @@ function ManageJobs() {
 
     try {
       const response = await fetch(
-        `http://https://hiretrack-backend-ny1y.onrender.com/api/jobs/recruiter/${encodeURIComponent(user.email)}`,
+        `https://hiretrack-backend-ny1y.onrender.com/api/jobs/recruiter/${encodeURIComponent(user.email)}`,
         {
           headers: authHeaders()
         }
@@ -53,7 +53,7 @@ function ManageJobs() {
 
     try {
       const response = await fetch(
-        `http://https://hiretrack-backend-ny1y.onrender.com/api/jobs/${id}`,
+        `https://hiretrack-backend-ny1y.onrender.com/api/jobs/${id}`,
         {
           method: "DELETE",
           headers: authHeaders()

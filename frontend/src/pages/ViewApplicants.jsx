@@ -23,7 +23,7 @@ function ViewApplicants() {
 
       try {
         const response = await fetch(
-          `http://https://hiretrack-backend-ny1y.onrender.com/api/applications/recruiter/${encodeURIComponent(user.email)}`,
+          `https://hiretrack-backend-ny1y.onrender.com/api/applications/recruiter/${encodeURIComponent(user.email)}`,
           {
             headers: authHeaders()
           }
@@ -48,7 +48,7 @@ function ViewApplicants() {
   const handleStatusChange = async (id, newStatus) => {
     try {
       const response = await fetch(
-        `http://https://hiretrack-backend-ny1y.onrender.com/api/applications/${id}/status?status=${encodeURIComponent(newStatus)}`,
+        `https://hiretrack-backend-ny1y.onrender.com/api/applications/${id}/status?status=${encodeURIComponent(newStatus)}`,
         {
           method: "PUT",
           headers: authHeaders()
@@ -76,7 +76,7 @@ function ViewApplicants() {
   const handleDownloadResume = async (app) => {
     try {
       const response = await fetch(
-        `http://https://hiretrack-backend-ny1y.onrender.com/api/applications/${app.id}/resume`,
+        `https://hiretrack-backend-ny1y.onrender.com/api/applications/${app.id}/resume`,
         {
           headers: authHeaders()
         }

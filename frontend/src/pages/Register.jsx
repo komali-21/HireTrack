@@ -16,7 +16,7 @@ function Register() {
 
     try {
       const response = await fetch(
-        "http://https://hiretrack-backend-ny1y.onrender.com/api/users/register",
+        "https://hiretrack-backend-ny1y.onrender.com/api/users/register",
         {
           method: "POST",
           headers: {
