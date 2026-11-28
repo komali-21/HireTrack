@@ -18,7 +18,7 @@ function Apply() {
     async function fetchJob() {
       try {
         const response = await fetch(
-          `http://localhost:8080/api/jobs/${id}`
+          `http://https://hiretrack-backend-ny1y.onrender.com/api/jobs/${id}`
         );
 
         if (!response.ok) {
@@ -87,7 +87,7 @@ function Apply() {
       setUploading(true);
 
       const response = await fetch(
-        `http://localhost:8080/api/applications/${id}`,
+        `http://https://hiretrack-backend-ny1y.onrender.com/api/applications/${id}`,
         {
           method: "POST",
           headers: authHeaders(),

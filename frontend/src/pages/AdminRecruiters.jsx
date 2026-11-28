@@ -21,7 +21,7 @@ useEffect(() => {
     return;
   }
 
-  fetch("http://localhost:8080/api/admin/recruiters", {
+  fetch("http://https://hiretrack-backend-ny1y.onrender.com/api/admin/recruiters", {
     headers: authHeaders()
   })
     .then((response) => {

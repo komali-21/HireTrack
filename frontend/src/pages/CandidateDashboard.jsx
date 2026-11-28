@@ -31,7 +31,7 @@ function CandidateDashboard() {
 
       try {
         const response = await fetch(
-          `http://localhost:8080/api/applications/candidate/${encodeURIComponent(user.email)}`,
+          `http://https://hiretrack-backend-ny1y.onrender.com/api/applications/candidate/${encodeURIComponent(user.email)}`,
           {
             headers: authHeaders()
           }

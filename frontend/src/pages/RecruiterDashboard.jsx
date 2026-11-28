@@ -26,13 +26,13 @@ useEffect(() => {
       const [jobsResponse, applicationsResponse] =
         await Promise.all([
           fetch(
-            `http://localhost:8080/api/jobs/recruiter/${encodeURIComponent(user.email)}`,
+            `http://https://hiretrack-backend-ny1y.onrender.com/api/jobs/recruiter/${encodeURIComponent(user.email)}`,
             {
               headers: authHeaders()
             }
           ),
           fetch(
-            `http://localhost:8080/api/applications/recruiter/${encodeURIComponent(user.email)}`,
+            `http://https://hiretrack-backend-ny1y.onrender.com/api/applications/recruiter/${encodeURIComponent(user.email)}`,
             {
               headers: authHeaders()
             }

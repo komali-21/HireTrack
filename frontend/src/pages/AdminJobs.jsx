@@ -20,7 +20,7 @@ function AdminJobs() {
       return;
     }
 
-    fetch("http://localhost:8080/api/admin/jobs", {
+    fetch("http://https://hiretrack-backend-ny1y.onrender.com/api/admin/jobs", {
       headers: authHeaders()
     })
       .then((response) => {
@@ -46,7 +46,7 @@ function AdminJobs() {
 
     try {
       const response = await fetch(
-        `http://localhost:8080/api/admin/jobs/${id}`,
+        `http://https://hiretrack-backend-ny1y.onrender.com/api/admin/jobs/${id}`,
         {
           method: "DELETE",
           headers: authHeaders()

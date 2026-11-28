@@ -17,7 +17,7 @@ function Jobs() {
   useEffect(() => {
     const fetchJobs = async () => {
       try {
-        const response = await fetch("http://localhost:8080/api/jobs");
+        const response = await fetch("http://https://hiretrack-backend-ny1y.onrender.com/api/jobs");
 
         if (!response.ok) {
           throw new Error("Failed to fetch jobs");

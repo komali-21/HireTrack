@@ -28,7 +28,7 @@ function CandidateProfile() {
     }
 
     fetch(
-      `http://localhost:8080/api/users/profile/${encodeURIComponent(user.email)}`,
+      `http://https://hiretrack-backend-ny1y.onrender.com/api/users/profile/${encodeURIComponent(user.email)}`,
       {
         headers: authHeaders()
       }
@@ -70,7 +70,7 @@ function CandidateProfile() {
 
     try {
       const response = await fetch(
-        `http://localhost:8080/api/users/profile/${encodeURIComponent(user.email)}`,
+        `http://https://hiretrack-backend-ny1y.onrender.com/api/users/profile/${encodeURIComponent(user.email)}`,
         {
           method: "PUT",
           headers: authHeaders({
